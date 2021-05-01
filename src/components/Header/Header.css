@@ -1,0 +1,14 @@
+.abPic img{
+    height: 200px;
+    width: 200px;
+  }
+  .textA{
+    padding: 20px;
+  }
+  .img-style img{
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-left: 150px;
+  }
+  

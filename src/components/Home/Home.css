@@ -1,0 +1,29 @@
+body {
+  background-color: #6d56c1;
+}
+
+
+body {
+  margin: 0;
+  color: #b55c80;
+  font: 300 18px/18px Roboto;
+  background: -webkit-linear-gradient(90deg, #6d56c1 10%, #5d9769 90%);
+  background: -moz-linear-gradient(90deg, #6d56c1 10%, #5f8668 90%);
+  background: -ms-linear-gradient(90deg, #6d56c1 10%, #83ad8c 90%);
+  background: -o-linear-gradient(90deg, #6d56c199 10%, #7ba083 90%);
+  background: linear-gradient(90deg, #6d56c1 10%, #729c7b 90%)
+}
+.abPic img{
+  height: 200px;
+  width: 200px;
+}
+.textA{
+  padding: 20px;
+}
+.img-style img{
+  height: 300px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-left: 150px;
+}
+
