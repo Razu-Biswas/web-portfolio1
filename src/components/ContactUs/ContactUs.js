@@ -1,41 +1,52 @@
 import React from 'react';
+import './ContactUs.css'
+import emailjs from 'emailjs-com';
+
+
+
 
 const ContactUs = () => {
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_7lu8heh', 'template_ewtnajb', e.target, 'user_k4VrG4YWTBi0LACHHbA6P')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
+
     return (
-        
-             <section>
-            <div class="contact-main">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-                                <div>
-                                    <h2 className="text-center text-white">CONTACT US</h2>
-                                </div>
-                                <form method="post" data-form-title="CONTACT US">
-                                    <input type="hidden" data-form-email="true" />
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone" />
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-lg btn-success">SEND</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+
+        <div class="contact">
+            <div class="container">
+                <div class="info">
+                    <h2 style={{ textAlign: "left" }}>Contact Me</h2>
+                    <p>My name is Razu. I love to study and new Technology, TypScript, ReactNative and love JavaScript & React.</p>
+                    <p>
+                        City Dhaka,<br />
+                            Bangladesh.<br />
+
+                    </p>
+                    <p>
+                        <strong>Email:</strong>razubiswas114@gmail.com<br />
+                        <strong>phone:</strong>  +88 01303184861
+                         </p>
                 </div>
+                <form class="from" onSubmit={sendEmail}>
+                    <label> Name*</label>
+                    <input name="name" type="text" />
+                    <label> Email address*</label>
+                    <input name="email" type="text" />
+                    <label> Message*</label>
+                    <textarea name="message"></textarea>
+                    <input type="submit" value="contact ME" />
+                </form>
             </div>
-        </section>
+        </div>
+
     );
 };
 

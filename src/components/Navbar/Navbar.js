@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light row">
                 <div className=" navbar-collapse" id="navbarSupportedContent">
                     <ul className="nav-item active">
-                       <img src={logo} className='logoImg' alt="" />
+                       <Link to="/"><img src={logo} className='logoImg' alt="" /></Link>
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">

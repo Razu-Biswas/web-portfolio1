@@ -1,4 +1,128 @@
+*{
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+}
 
+.style1{
+    /* background-color: #333; */
+    padding-bottom: 10px;
+}
+.skills{
+    width: 500px;
+    margin: 60px auto;
+    color: white;
+}
+.skills li{
+    margin: 20px 0;
+}
+.bar{
+
+    background-color: #353b48;
+    display: block;
+    height: 3px;
+    border: 1px solid rgba(0,0,0,0,3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 1opx tomato;
+}
+.bar span{
+    height: 3px;
+    float: left;
+    background-color: tomato;
+}
+.html{
+    width: 90%;
+    animation: html 4s;
+}
+.css{
+    width: 70%;
+    animation: css 4s;
+}
+.jquery{
+    width: 90%;
+    animation: jquery 4s;
+}
+.javascript{
+    width: 85%;
+    animation: javascript 4s;
+}
+.node{
+    width: 85%;
+    animation: javascript 4s;
+}
+.express{
+    width: 85%;
+    animation: javascript 4s;
+}
+.react{
+    width: 85%;
+    animation: javascript 4s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes jquery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 87%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 88%;
+    }
+}
+@keyframes express{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 868%;
+    }
+}
+@keyframes node{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 78%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .skills{
+        width: 300px;
+       
+    }
+
+}
 
 
 

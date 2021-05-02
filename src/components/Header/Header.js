@@ -1,11 +1,11 @@
 import React from 'react';
 import Img from '../../images/sat.jpg'
-import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
     return (
-        <main style={{ height: '450px' }} className="row d-flex align-items-center">
+       
+        <main className="row d-flex align-items-center header">
             <div className="col-md-4 col-sm-6 col-12 offset-md-1">
                 <h3 style={{ color: 'white' }}>HELLO,  I AM</h3>
                 <h1 style={{ color: 'white' }}>RAZU BISWAS</h1>
@@ -18,6 +18,7 @@ const Header = () => {
                 <img src={Img} alt="" className="img-fluid" />
             </div>
         </main>
+   
     );
 };
 
